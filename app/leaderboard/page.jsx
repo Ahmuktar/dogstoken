@@ -37,8 +37,8 @@ const Leaderboard = () => {
           </div>
           <p className="font-semibold">#123</p>
         </div>
-        {fakeData.map((user) => (
-          <LeaderboardCard user={user} />
+        {fakeData.map((user, index) => (
+          <LeaderboardCard key={index} user={user} />
         ))}
       </div>
     </div>
